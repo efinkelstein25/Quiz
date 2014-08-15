@@ -1,0 +1,19 @@
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	min-width: 950px;
+	height: 100%;
+	font-family: Tahoma, sans-serif;
+}
+
+.quizinfo{
+	
+margin-right: auto;
+margin-left: auto;
+margin-top: 200px;
+text-align: center;
+
+}
