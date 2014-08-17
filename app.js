@@ -9,6 +9,8 @@ function Question(number, question, options, correct) {
 
 count = 0;
 score = 0;
+var clicked = 0;
+var moveFromLanding = false;
 
 var questions = [
 new Question(1, "AAA", ["a", "b", "c", "d"], 0), 
@@ -18,25 +20,47 @@ new Question(4, "DDD", ["m", "n", "o", "p"], 3),
 new Question(5, "EEE", ["q", "r", "s", "t"], 1)
 ]
 
-
+$(".answers").hide();
 /*setQuestion(questions, count);*/
 
 /*on click, for the button .submit*/
 
 $(".submit").click(function(){
-	console.log(count);
-	/*
-	if ($('input[name=option]').attr('checked',false))
+
+	if (count === 0){
+		$(".submit").text("Next Question");
+		$(".answers").show();
+		$("#counter").show();
+		$(".question").show();
+		setQuestion(questions, count);
+		clicked++;
+	}
+	/*if ($('input[name=option]').attr('checked',false) && moveFromLanding === true)
 	{
 		alert("Please select an answer!");
-	}*/
-	if (count < 5){
-	alert($('input[name=option]:checked').val());
+	} else */if (clicked > 1 && count < 5){
 	checkIfCorrect(questions);
 	setQuestion(questions, count);
 	count++;
 	}
+	$("#score").text("Score: " + score);
 	$('input[name=option]').attr('checked',false);
+
+	if (count === 5){
+		count++;
+		$(".answers").hide();
+		$("#counter").hide();
+		$(".question").hide();
+		$(".submit").text("Play Again!");
+	}
+
+	if (count === 6){
+		clicked = 1;
+		count = 0;
+		score = 0;
+	}
+
+
 });
 
 
@@ -54,7 +78,11 @@ function setQuestion(q, number){
 }
 
 function checkIfCorrect(q){
+	console.log(count);
 	if ($('input[name=option]:checked').val() == q[count].correct){
+		console.log("count "  + count);
+		console.log("score " + score);
 		score++;
 	}
+
 }
