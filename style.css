@@ -9,11 +9,33 @@ body{
 	font-family: Tahoma, sans-serif;
 }
 
+html{
+background: url(soccerBall.jpg) no-repeat center center fixed;
+background-size: cover;
+min-width: 950px;
+}
+
+h1{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	 text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    margin-top: 10px;
+}
+
 .quizinfo{
 	
 margin-right: auto;
 margin-left: auto;
 margin-top: 200px;
 text-align: center;
-
+background-color: rgba(254, 115, 2, .7);
+height: 300px;
+width: 300px;
 }
+
+
