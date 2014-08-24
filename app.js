@@ -14,7 +14,7 @@ var moveFromLanding = false;
 var restart = false;
 
 var questions = [
-new Question(1, "AAA", ["a", "b", "c", "d"], 0), 
+new Question(1, "Which player won the Golden Boot award?", ["James Rodriguez", "Arjen Robben", "Neymar", "Lionel Messi"], 0), 
 new Question(2, "BBB", ["e", "f", "g", "h"], 1),
 new Question(3, "CCC", ["i", "j", "k", "l"], 2),
 new Question(4, "DDD", ["m", "n", "o", "p"], 3),
@@ -49,6 +49,7 @@ $(".submit").click(function(){
 		$(".answers").show();
 		$("#counter").show();
 		$(".question").show();
+		$("#score").show();
 		if (clicked < 1){
 		setQuestion(questions, count);
 		}
@@ -68,8 +69,12 @@ $(".submit").click(function(){
 	if (count === 5){
 		count++;
 		$(".answers").hide();
+		/*
 		$("#counter").hide();
-		$(".question").hide();
+		$(".question").hide();*/
+		$("#score").hide();
+		$("#counter").text("");
+		$(".question").text("Congrats! You got " + score + " out of 5 correct!");
 		$(".submit").text("Play Again!");
 	}
 
