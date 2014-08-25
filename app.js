@@ -15,10 +15,10 @@ var restart = false;
 
 var questions = [
 new Question(1, "Which player won the Golden Boot award?", ["James Rodriguez", "Arjen Robben", "Neymar", "Lionel Messi"], 0), 
-new Question(2, "BBB", ["e", "f", "g", "h"], 1),
-new Question(3, "CCC", ["i", "j", "k", "l"], 2),
-new Question(4, "DDD", ["m", "n", "o", "p"], 3),
-new Question(5, "EEE", ["q", "r", "s", "t"], 1)
+new Question(2, "Which team suffered the worst loss by a defending champion?", ["Italy","Brazil" , "England", "Spain"], 3),
+new Question(3, "Which player got banned for biting an Italian player in the penalty box?", ["Wayne Rooney", "Mario Balotelli", "Luis Suarez", "Hulk"], 2),
+new Question(4, "Who won the third place title?", ["Brazil", "Argentina", "Costa Rica", "Netherlands"], 3),
+new Question(5, "What was the score of the disasterous Germany-Brazil game?", ["4-0", "7-1", "6-2", "5-3"], 1)
 ]
 
 $(".answers").hide();

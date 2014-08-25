@@ -4,7 +4,7 @@ html, body{
 }
 
 body{
-	min-width: 950px;
+	min-width: 1090px;
 	height: 100%;
 	font-family: 'Lucinda Sans Unicode', sans-serif;
 }
@@ -12,11 +12,13 @@ body{
 html{
 /*background: url(soccerBall.jpg) no-repeat center center fixed;*/
 /*background-size: cover;*/
+background: url(soccerBall.jpg) no-repeat center center fixed;
+background-size: cover;
 min-width: 950px;
 }
 
 h1{
-	color: #C8050B;
+	color: white;
 	font-size: 50px;
 	text-align: center;
 	margin-left: auto;
@@ -36,7 +38,9 @@ margin-right: auto;
 margin-left: auto;
 margin-top: 50px;
 text-align: center;
-background-color: #52931B;
+background-color: rgba(82, 147, 27, .8);
+/*background: background: url(soccerBall.jpg) no-repeat center center fixed;;
+background-size: cover;*/
 height: 450px;
 width: 600px;
 border-radius: 10px;
@@ -56,31 +60,51 @@ border-radius: 10px;
 	text-align: left;
 	margin-top:5px;
 	margin-left: 50px;
-	background-color: #52931B;
+	/*background-color: rgba(82, 147, 27, .8);*/
 	color: white;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 
 #answer1, #answer2, #answer3, #answer4{
 	padding: 5px;
 	height: 50px;
-	background-color: #52931B;
+	/*background-color: rgba(82, 147, 27, .8);*/
 	color: white;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 
 #counter{
-	background-color:#52931B;
+	/*background-color:rgba(82, 147, 27, .8);*/
 	height:50px;
 	font-size: 30px;
 	padding-top: 15px;
 	color:white;
 	border-radius: 10px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 .question{
-	background-color: #52931B;
+	/*background-color: rgba(82, 147, 27, .8);*/
 	height:65px;
 	font-size: 20px;
 	padding-top: 10px;
 	color: white;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 
 .submit{
