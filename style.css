@@ -12,13 +12,13 @@ body{
 html{
 /*background: url(soccerBall.jpg) no-repeat center center fixed;*/
 /*background-size: cover;*/
-background: url(soccerBall.jpg) no-repeat center center fixed;
-background-size: cover;
+/*background: url(soccerBall.jpg) no-repeat center center fixed;
+background-size: cover;*/
 min-width: 950px;
 }
 
 h1{
-	color: white;
+	color: #C9040E;
 	font-size: 50px;
 	text-align: center;
 	margin-left: auto;
@@ -121,6 +121,9 @@ border-radius: 10px;
 	margin-top: 50px;
 	font-size: 20px;
 	font-weight: bold;
+	background-color: #C9040E;
+	padding: 5px;
+	color: white;
 }
 
 

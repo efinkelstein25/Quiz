@@ -22,6 +22,7 @@ new Question(5, "What was the score of the disasterous Germany-Brazil game?", ["
 ]
 
 $(".answers").hide();
+$("#score").hide();
 /*setQuestion(questions, count);*/
 
 /*on click, for the button .submit*/
