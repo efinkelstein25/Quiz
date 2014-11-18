@@ -6,7 +6,7 @@ html, body{
 body{
 	min-width: 1090px;
 	height: 100%;
-	font-family: 'Lucinda Sans Unicode', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 html{
@@ -19,10 +19,11 @@ min-width: 950px;
 
 h1{
 	color: #C9040E;
-	font-size: 50px;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 50px;
 	
 	 text-shadow:
     -1px -1px 0 #000,
@@ -67,6 +68,7 @@ border-radius: 10px;
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000; 
+    font-family: 'Neuton', serif;
 }
 
 #answer1, #answer2, #answer3, #answer4{
@@ -79,6 +81,7 @@ border-radius: 10px;
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000; 
+    font-family: 'Neuton', serif;
 }
 
 #counter{
